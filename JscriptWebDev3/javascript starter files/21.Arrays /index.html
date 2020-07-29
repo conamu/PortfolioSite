@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Arrays</title>
+</head>
+<body>
+  <main id="main"></main>
+
+  <script>
+
+    var animals = ['cat', 'dog', 'tiger'];
+    var body = document.getElementById('main');
+
+    animals.forEach(element => {
+      body.appendChild(document.createElement('H1').appendChild(document.createTextNode(element)));
+    });
+
+  </script>
+</body>
+</html>

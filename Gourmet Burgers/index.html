@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Gourmet Burgers</title>
+  </head>
+
+    <body>
+
+        <header>
+
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <a class="navbar-brand" href="index.html">Gourmet Burgers</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Locations</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-md-1 ">
+                        <input class="form-control mb-2" type="text" placeholder="Search"> 
+                        <button class="btn btn-outline-success ml-md-2 mb-2" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+
+        </header>
+
+        <div class="carousel slide" data-ride="carousel" id="carouselControl">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="images/carousel1.jpg">
+                    <div class="carousel-caption">
+                        <h5>Made to order</h5>
+                        <p>Using only the fines ingredients.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="images/carousel2.jpg">
+                    <div class="carousel-caption">
+                        <h5>Over 50 types on our menu</h5>
+                        <p>Or build your own.</p>
+                    </div>                    
+                </div>
+                </div>
+                <a href="#carouselControl" class="carousel-control-prev" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a href="#carouselControl" class="carousel-control-next" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        
+
+        <div class="container text-center my-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="rounded-circle" src="images/open.jpg">
+                    <h2 class="my-2">Over 50 Restaurants</h2>
+                    <p>Treat yourself next Time you are in the Area!</p>
+                    <p><a class="btn btn-secondary" href="" role="button">View details &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <img class="rounded-circle" src="images/challenge.jpg">
+                    <h2 class="my-2">Fancy a challenge</h2>
+                    <p>Why not try one of our famous burger eating challanges!</p>
+                    <p><a class="btn btn-secondary" href="" role="button">View details &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <img class="rounded-circle" src="images/sign.jpg">
+                    <h2 class="my-2">Established 2003</h2>
+                    <p>Our reputation does not lie, over 15 years of high quality.</p>
+                    <p><a class="btn btn-secondary" href="" role="button">View details &raquo;</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-dark">
+            <div class="row text-center">
+                <div class="col-md-7 text-light dont-italic">
+                    <p>Sign up for exklusive offers!</p>
+                </div>
+                <div class="col-md-5" data-toggle="modal" data-target="#modal">
+                    <button type="button" class="btn btn-success">Sign up Here!</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sign up for our exklusive offers!</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="nameInput">Your Name</label>
+                                <input type="text" class="form-control" id="nameInput" placeholder="Enter your Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="mailInput">Your E-Mail</label>
+                                <input type="email" class="form-control" id="mailInput" placeholder="Enter your E-Mail">
+                            </div>
+                            <div class="form-group">
+                                <label for="adrInput">Your Address</label>
+                                <textarea class="form-control" id="address" rows=3 placeholder="Enter your Address"></textarea>
+                            </div>      
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="emailcheck" value="option1">
+                            <label class="form-check-label" form="emailcheck">Contact by Mail</label>
+                        </div>    
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="postcheck" value="option1">
+                            <label class="form-check-label" form="postcheck">Contact by Postal</label>
+                        </div> 
+                        <button class="btn btn-primary" type="submit">Submit!</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container bg-light py-4">
+            <p class="float-right" ><a href="#">Back to Top</a></p>
+            <p>
+                &copy; 2020 Gourmet Burgers &middot;
+                <a href="">Home</a> &middot;
+                <a href="">Locations</a>
+            </p>
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+
+</html>

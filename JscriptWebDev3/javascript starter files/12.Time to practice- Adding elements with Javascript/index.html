@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Time to practice: Adding elements with Javascript</title>
+</head>
+<body>
+
+  <main id="space">
+    <!-- Create the following elements using Javascript: -->
+
+    <!-- <p>Hello, My name is Chris
+    <img src="image.jpg"> -->
+  </main>
+
+  <script>
+
+    var username = prompt('Enter your Name');
+    var sent = "Hello, my name is " + username;
+    var site = prompt('Gib mir einen Link!')
+
+    //Create the HTML Element
+    var list = document.createElement('p');
+    var img = document.createElement('img');
+    var frame = document.createElement('iframe');
+
+    //create a text node to add inside the element.
+    var text = document.createTextNode(sent);
+
+    //put textnode inside html element.
+    var item = list.appendChild(text);
+    console.log(item);
+    
+    //append html element to the main element as a child
+    var main = document.getElementById('space')
+    main.appendChild(item);
+
+    main.appendChild(img);
+    img.setAttribute('src', 'image.jpg');
+
+    main.appendChild(frame);
+    frame.setAttribute('src', site);
+
+
+
+  </script>
+  
+</body>
+</html>

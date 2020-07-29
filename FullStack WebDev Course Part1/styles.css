@@ -1,0 +1,193 @@
+header, footer {
+    font-family:"Arial Black", Gadget, sans-serif;
+    background: #52a0e5;
+    color: white;
+    height: 150px;
+    display: flexbox;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #0e69e9;
+}
+
+header li {
+    display: inline-block;
+}
+
+header h1, nav {
+    display: inline-block;
+}
+
+.headernav, input[type="search"] {
+    position: relative;
+    left:10%;
+}
+
+.footernav {
+    position: relative;
+    top: 50px;
+    left: 450px;
+}
+
+.footernav li {
+    margin: 10px;
+}
+
+main {
+    width: 68%;
+    display: inline-block;
+    padding: 10px;
+}
+
+aside {
+    width: 270px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    position: sticky;
+    top: 1px;
+    background-color: lightcoral;
+}
+
+body {
+    font-family: 'Odibee Sans', cursive;
+    background: white;
+    max-width: 80%;
+    margin: 0 auto;
+    color: rgb(49 ,46 ,46);
+}
+
+html {
+    background: #f7f7f7;
+}
+
+.product {
+    box-sizing: border-box;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    background: white;
+    overflow: hidden;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 30%;
+    max-height: 40%;
+    min-width: 300px;
+
+}
+
+.pcontainer {
+    position: static;
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.button{
+    padding: 10px;
+    display: inline-block;
+}
+
+p:last-of-type {
+    color: red;
+}
+
+.button:last-of-type {
+    background-color: #0a69e9;
+    color: white;
+}
+
+/* product detail page */
+.product-detail {
+    width: 660px;
+    text-align: center;
+}
+
+.product-detail img {
+    max-width: 50%;
+    float: left;
+}
+
+.product-detail .button {
+    left: 100px;
+    top: 50px;
+}
+
+form {
+    padding: 10px;
+    margin: 10px 0;
+    width: 600px;
+}
+
+.input label {
+    display: inline-block;
+    width: 100px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    width: 400px;
+}
+
+form > div {
+    margin: 10px 0;
+}
+
+.pdtable {
+    position: relative;
+    left: 200px;
+}
+
+#pdc{
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.notificationtype {
+    display: inline-block;
+}
+
+@media(max-width: 450px){
+    .pcontainer{
+        flex-direction: column;
+
+    }
+    .product{
+        max-width: 100%;
+        max-height: 60%;
+    }
+}
+
+@media(max-width: 1260px){
+
+    body{
+        display: flexbox;
+    }
+
+    aside{
+        width: 80%;
+        align-self: center;
+    }
+}

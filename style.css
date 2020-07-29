@@ -1,0 +1,12 @@
+.typo{
+    font-family: 'Righteous', cursive;
+}
+
+main{
+    margin: 0, 20px;
+    padding-top: 5rem;
+}
+
+.fix{
+    padding-left: 60rem;
+}

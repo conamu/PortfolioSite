@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOM Manipulation</title>
+</head>
+<body id="bgr">
+
+  <button id="btn" type="button">Dark Mode</button>
+
+  <script>
+
+      var btn = document.getElementById('btn');
+      var body;
+      var i = 0;
+
+      btn.addEventListener("click", darkmode);
+
+      function darkmode() {
+        body = document.getElementById('bgr');
+        body.style.background = "black";
+        i = 1;
+
+        if(i == 1){
+          body.style.background = "white";
+          i = 0;
+        }
+
+      }
+
+  </script>
+  
+</body>
+</html>

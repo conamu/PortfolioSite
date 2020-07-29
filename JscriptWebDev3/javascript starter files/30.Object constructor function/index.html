@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Object constructor function</title>
+</head>
+<body>
+
+  <div id="div"></div>
+
+  <script>
+
+    function Character(name, age, id) {
+
+      this.name = name;
+      this.age = age;
+      this.id = id;
+
+      function sing() {
+        document.getElementById('div').appendChild(document.createElement('H1').innerHTML = Lalalalalalaallaal);
+      }
+
+    }
+    
+    var Tom = new Character("Tom", 23, 01);
+
+    document.getElementById('div').innerHTML = Tom.name;
+
+    Tom.sing;
+  
+  </script>
+</body>
+</html>
